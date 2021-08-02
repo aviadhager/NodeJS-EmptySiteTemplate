@@ -1,5 +1,10 @@
 pipeline {
-  agent any
+  agent {
+    node {
+      label 'centof7'
+    }
+
+  }
   stages {
     stage('Check out from github') {
       steps {
