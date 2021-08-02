@@ -1,10 +1,5 @@
 pipeline {
-  agent {
-    node {
-      label 'centof7'
-    }
-
-  }
+  agent any
   stages {
     stage('error') {
       steps {
