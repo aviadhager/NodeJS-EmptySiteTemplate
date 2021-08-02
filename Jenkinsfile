@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('') {
       steps {
-        git(url: 'https://github.com/aviadhager/NodeJS-EmptySiteTemplate.git', branch: 'master')
+        git(url: 'https://github.com/aviadhager/NodeJS-EmptySiteTemplate.git', branch: 'master', credentialsId: 'github')
       }
     }
 
