@@ -6,9 +6,9 @@ pipeline {
 
   }
   stages {
-    stage('') {
+    stage('error') {
       steps {
-        git(url: 'https://github.com/aviadhager/NodeJS-EmptySiteTemplate.git', branch: 'master', credentialsId: 'github')
+        git(url: 'https://github.com/aviadhager/NodeJS-EmptySiteTemplate.git', credentialsId: 'github')
       }
     }
 
