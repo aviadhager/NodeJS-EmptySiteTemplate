@@ -34,7 +34,7 @@ pipeline {
     stage('archive and clean') {
       steps {
         sh 'zip -r package.zip .'
-        archiveArtifacts(artifacts: 'package.zip', allowEmptyArchive: true)
+        archiveArtifacts(artifacts: 'package.zip', onlyIfSuccessful: true)
         cleanWs(cleanWhenSuccess: true)
       }
     }
